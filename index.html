@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-Tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <section id="banner">
+        <nav class="top-bar">
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cis.html">CIS</a></li>
+                <li><a href="#">Poster</a></li>
+                <li><a href="#">Banner</a></li>
+                <li><a href="#">Ad image designing</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+
+            <ul class="btn">
+                <li class="btn1"><a href="#"></a></li>
+            </ul>
+
+        </nav>
+
+        <marquee scrollamount="30" height="300px" loop="">
+            Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang
+            Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan
+            Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang
+            Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan
+            Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang
+            Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan Chang Design Lo Hsuan
+            Chang Design
+        </marquee>
+
+        <figure class="banner_flash">
+            <img src="img/banner_flash.svg" alt="">
+        </figure>
+
+    </section>
+
+    <!-- 輪播圖 -->
+    <section id="hot">
+
+        <div class="swiper-container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <figure class="info_1">
+                        <img src="./img/img1.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="swiper-slide">
+                    <figure class="info_2">
+                        <img src="./img/img2.jpg" alt="">
+                    </figure>
+                </div>
+
+                <div class="swiper-slide">
+                    <figure class="info_3">
+                        <img src="./img/img3.jpg" alt="">
+                    </figure>
+                </div>
+
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <div class="click">
+            <ul>
+                <li><a href="cis.html">CIS</a></li>
+                <li><a href="">Poster</a></li>
+                <li><a href="">Banner</a></li>
+                <li><a href="">Ad image designing</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Contact me -->
+
+    <section id="contact_me">
+
+        <h1 data-aos="fade-up"
+        data-aos-duration="3000">
+        Contact me.</h1>
+
+        <div class="about">
+
+            <div class="text">
+                <h2>Desiner</h2>
+                <h3>Lo Hsuan Chang</h3>
+
+                <p data-aos="fade-up-right" data-aos-duration="3000">
+                    『靈感是腦海瞬間的漣漪，設計是將其激盪成有形的存在。』<br>
+                    從來來往往與人的交流中，<br>
+                    一張特色的名片能加深一個人的印象，<br>
+                    『故好的設計除了是好看的皮囊外，所附加的加分條件。』<br>
+                    設計始終是賦予一樣有形無形的事物一個全新的生命力。</p>
+            </div>
+
+            <div class="photo">
+                <img  data-aos="fade-up-left" 
+                data-aos-duration="3000"
+                src="./img/contact_img.svg" alt="">
+            </div>
+
+        </div>
+
+        <figure class="contact_flash">
+            <img src="./img/contact_flash.svg" alt="">
+        </figure>
+
+    </section>
+
+    <!-- 表單 -->
+
+    <section id="input">
+
+        <figure class="form_flash">
+            <img src="./img/form_flash.svg" alt="">
+        </figure>
+
+        <div class="contact">
+
+            <form name="contact_form" id="contact_form" method="post">
+                <label for="username"></label>
+                <input type="text" name="username" id="username" required="required" autocomplete="on"
+                    placeholder="Name" title="請輸入姓名">
+
+                <label for="email"></label>
+                <input type="email" name="email" id="email" required="required" autocomplete="on" placeholder="E-mail"
+                    title="請輸入email">
+
+                <label for="message"></label>
+                <textarea name="message" rows="5" id="message" placeholder="Message"></textarea>
+
+                <button id="contact_btn">
+                    <span>Send</span>
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- jquery原生碼，一定要放最上面 -->
+    <script src="./jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container" ,{
+          pagination: {
+            el: ".swiper-pagination"
+        }
+        });
+      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="./script.js"></script>
+
+
+    <footer>
+        <small>copyright &copy; Lo Hsuan Chang Design</small>
+
+        <div id="gotop">
+            <img src="./img/gotop.svg" alt="置頂按鈕">
+        </div>
+        
+    </footer>
+</body>
+
+</html>
